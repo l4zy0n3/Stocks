@@ -99,23 +99,15 @@ for index in range( train_limit - sequence_len):
 
 print( train_data[:5], validate_data[-5:-1] ,test_data[:5])
 
-# no_sequences_train = int(train_data.shape[0]/sequence_len)
-# no_sequences_valid = int(validate_data.shape[0]/sequence_len)
-# no_sequences_test = int(test_data.shape[0]/sequence_len)
-
 X_train = train_data[['Open','High','Low','Sentiments']].as_matrix().reshape( train_data.shape[0], 1, 4)
 y_train = train_data[['Close']].as_matrix().flatten()
 
 X_valid = validate_data[['Open','High','Low','Sentiments']].as_matrix().reshape( validate_data.shape[0], 1, 4)
 y_valid = validate_data[['Close']].as_matrix().flatten()
-# .reshape( 1, validate_data.shape[0], 1)
 
 X_test = test_data[['Open','High','Low','Sentiments']].as_matrix().reshape( test_data.shape[0], 1, 4)
 y_test = test_data[['Close']].as_matrix().flatten()
-# .reshape( 1, test_data.shape[0], 1)
 print(X_train.shape, y_train.shape)
-
-# y_train = np.hstack(np.asarray(df.output_vector)).reshape(len(df), 1)
 ```
 
 ## Building and training the LSTM
@@ -129,8 +121,8 @@ model.compile(optimizer='adam',loss='mse')
 #Fit model with history to check for overfitting
 history = model.fit( X_train, y_train, epochs=20, validation_data=(X_valid,y_valid), shuffle=True)
 ```
-Red -> Real
-Green -> Predicted
+* Red -> Real
+* Green -> Predicted
 ![Alt](/Screenshots/valid.png "Validation vs Real plot")
 
 > Training observations
