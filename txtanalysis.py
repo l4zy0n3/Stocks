@@ -5,10 +5,10 @@ import datetime
 class TweetSentiments:
     
     def __init__( self):
-        self.consumer_key = 'PoQKNomy0kbwHzQojjN8zLc6n'
-        self.consumer_secret = 'DnXGSnCPxDkXeQoyU0DgE7EFqalV8NMmvFt9rDYTGUhoKTmwg6'
-        self.access_token = '2741354322-pMH48FBZutbWGaYP4nO1sb8xWFbVCPfe23QUHeu'
-        self.access_token_secret = 'qcahLI7f1qVDbPboJOngHHasN7wCZaQ6bODkBtR8BHpLP' #put your own
+        self.consumer_key = ''
+        self.consumer_secret = ''
+        self.access_token = ''
+        self.access_token_secret = '' #put your own
         self.auth = tweepy.OAuthHandler( self.consumer_key, self.consumer_secret)
         self.auth.set_access_token( self.access_token, self.access_token_secret)
         self.api = tweepy.API( self.auth)
