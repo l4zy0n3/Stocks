@@ -130,6 +130,8 @@ model.compile(optimizer='adam',loss='mse')
 history = model.fit( X_train, y_train, epochs=20, validation_data=(X_valid,y_valid), shuffle=True)
 ```
 
+![Alt](/Screenshots/valid.png "Validation vs Real plot")
+
 > Training observations
 * Overfitting occurs at approx. 20 epochs
 * 1e-5 to 9e-5
