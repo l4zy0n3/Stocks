@@ -129,7 +129,8 @@ model.compile(optimizer='adam',loss='mse')
 #Fit model with history to check for overfitting
 history = model.fit( X_train, y_train, epochs=20, validation_data=(X_valid,y_valid), shuffle=True)
 ```
-
+Red -> Real
+Green -> Predicted
 ![Alt](/Screenshots/valid.png "Validation vs Real plot")
 
 > Training observations
