@@ -131,3 +131,4 @@ history = model.fit( X_train, y_train, epochs=20, validation_data=(X_valid,y_val
 validation loss with shuffle
 * 0.0322 to 6e-4 validation loss without shuffle
 
+> Licenced under MIT &copy; Yash Tripathi
