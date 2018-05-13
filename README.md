@@ -33,7 +33,7 @@ Choosing the Facebook stock
 ### Use to fetch data from quandl
 ```python
 import quandl as ql
-ql.ApiConfig.api_key = "b6y7-mew_t8z5yGJijFv"
+ql.ApiConfig.api_key = ""
 data = ql.get("WIKI/fb")
 data.to_csv("Facebook", encoding='utf-8')
 ```
