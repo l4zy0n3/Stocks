@@ -70,7 +70,7 @@ df[:5]
 # Data transformation
 
 ## Scaling
-Warning! DataFrames will be changed after this...
+Warning! This will change the DataFrames...
 
 ```python
 df = pd.read_csv('Facebook_Sentiments')
